@@ -1,0 +1,49 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #1f1a17;
+
+  --color-primary: #8d5a3b;
+  --color-primary-hover: #75472d;
+  --color-primary-pressed: #5f3823;
+
+  --color-text-primary: #4a2e1f;
+  --color-text-secondary: #2f2722;
+
+  --color-background: #f8f2ec;
+
+  --color-border: #8d5a3b;
+  --color-overlay: rgb(31 26 23 / 0.55);
+
+  --font-family-heading: "Prata", serif;
+  --font-family-base: "Onest", system-ui, sans-serif;
+
+  --font-size-h1: #{fluid(96, 56)};
+  --font-size-h2: #{fluid(56, 28)};
+  --font-size-h3: #{fluid(36, 22)};
+  --font-size-body: #{fluid(26, 16)};
+  --font-size-small: 14px;
+
+  --line-height-heading: 1.2;
+  --line-height-body: 1.6;
+
+  --section-padding-y: #{fluid(80, 52)};
+
+  --radius-sm: 14px;
+  --radius-md: 20px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 8px 24px rgb(0 0 0 / 6%);
+  --shadow-md: 0 16px 40px rgb(0 0 0 / 8%);
+  --shadow-lg: 0 24px 60px rgb(0 0 0 / 12%);
+
+  --transition-fast: .2s ease;
+  --transition: .3s ease;
+  --transition-slow: .45s ease;
+
+  --z-base: 0;
+  --z-header: 100;
+  --z-dropdown: 200;
+  --z-modal: 500;
+}
