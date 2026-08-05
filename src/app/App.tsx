@@ -1,8 +1,9 @@
 import "@/app/styles"
+import Header from "@/widgets/Header";
 
 function App() {
   return (
-    <h1>Кафе "Велес"</h1>
+    <Header />
   )
 }
 
