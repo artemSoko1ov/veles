@@ -1,6 +1,7 @@
 import styles from './Header.module.scss';
 import clsx from "clsx";
 import {navItems} from "@/widgets/Header/model/navItems";
+import Logo from "@/shared/ui/Logo";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
           href="#"
           aria-label="На главную"
         >
-          Logo
+          <Logo />
         </a>
         <nav aria-label="Основная навигация">
           <ul className={styles.list}>
