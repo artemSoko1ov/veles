@@ -1,6 +1,6 @@
 import styles from './Header.module.scss';
 import clsx from "clsx";
-import {navItems} from "@/widgets/Header/model/navItems";
+import { navItems } from "@/widgets/Header/model/navItems";
 import Logo from "@/shared/ui/Logo";
 
 const Header = () => {
@@ -14,12 +14,15 @@ const Header = () => {
         >
           <Logo />
         </a>
-        <nav aria-label="Основная навигация">
+        <nav
+          className={styles.nav}
+          aria-label="Основная навигация"
+        >
           <ul className={styles.list}>
-            {navItems.map(({name, link}) => (
+            {navItems.map(({ id, name, link }) => (
               <li
                 className={styles.item}
-                key={link}
+                key={id}
               >
                 <a
                   className={styles.link}
@@ -27,7 +30,6 @@ const Header = () => {
                 >
                   {name}
                 </a>
-
               </li>
             ))}
           </ul>
