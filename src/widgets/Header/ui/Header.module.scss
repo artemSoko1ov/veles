@@ -3,25 +3,73 @@
   top: 0;
   left: 0;
   z-index: var(--z-header);
+
   width: 100%;
   padding-block: fluid(25, 14);
 }
 
 .inner {
+  position: relative;
+
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
+
   column-gap: fluid(69, 10);
   row-gap: 16px;
+
+  @include tablet {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr auto;
+  }
 }
 
 .nav {
   min-width: 0;
+
+  @include tablet {
+    position: absolute;
+    top: calc(100% + 14px);
+    right: 0;
+    z-index: var(--z-dropdown);
+
+    width: min(360px, calc(100vw - 32px));
+    padding: 24px;
+
+    border: 1px solid rgb(141 90 59 / 0.18);
+    border-radius: 16px;
+    background-color: var(--color-background);
+    box-shadow: var(--shadow-md);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    pointer-events: none;
+    transition:
+      opacity var(--transition),
+      visibility var(--transition),
+      transform var(--transition);
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.navOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .logo {
   display: flex;
   align-items: center;
+
   width: 120px;
   min-width: 100px;
   height: auto;
@@ -34,8 +82,28 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
   gap: 10px fluid(69, 10);
   min-width: 0;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: initial;
+
+    gap: 20px;
+  }
+
+  @include mobile {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px 16px;
+  }
+
+  @include mobile-m {
+    grid-template-columns: 1fr;
+  }
 }
 
 .item {
@@ -44,10 +112,17 @@
 
 .link {
   position: relative;
+
   display: block;
   overflow-wrap: anywhere;
+
   text-align: center;
+
   transition: color var(--transition-fast);
+
+  @include tablet {
+    text-align: left;
+  }
 
   @include hover {
     color: var(--color-primary);
@@ -56,53 +131,43 @@
 
 .phone {
   justify-self: end;
+
   font-weight: 600;
   font-size: fluid(24, 16);
   white-space: nowrap;
+
   transition: color var(--transition-fast);
+
+  @include tablet {
+    display: none;
+  }
 
   @include hover {
     color: var(--color-primary);
   }
 }
 
-@include tablet {
-  .inner {
-    grid-template-columns: auto;
-  }
+.burgerButton {
+  display: none;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0;
+  border-radius: 50%;
+  flex-shrink: 0;
 
-  .nav,
-  .phone {
-    display: none;
+  @include tablet {
+    display: inline-flex;
+    grid-column: 3;
+    justify-self: end;
   }
 }
 
-@include mobile {
-  .inner {
-    grid-template-columns: 1fr;
-    justify-items: start;
-  }
-
-  .nav,
-  .phone {
-    width: 100%;
-  }
-
-  .list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px 16px;
-    justify-content: initial;
-  }
-
-  .phone {
-    justify-self: stretch;
-    text-align: center;
-  }
+.burgerButtonOpen {
+  color: var(--color-background);
+  background-color: var(--color-primary);
 }
 
-@include mobile-m {
-  .list {
-    grid-template-columns: 1fr;
-  }
+.burgerIcon {
+  width: 30px;
+  height: 30px;
 }
