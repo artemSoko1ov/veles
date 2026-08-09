@@ -35,10 +35,10 @@ const Header = () => {
           aria-label="Основная навигация"
         >
           <ul className={styles.list}>
-            {navItems.map(({id, name, link}) => (
+            {navItems.map(({name, link}) => (
               <li
                 className={styles.item}
-                key={id}
+                key={link}
               >
                 <a
                   className={styles.link}

@@ -1,32 +1,22 @@
 export const navItems = [
   {
-    id: 1,
     name: "Банкеты и мероприятия",
-    link: "#",
+    link: "#about",
   },
   {
-    id: 2,
-    name: "Бизнес-ланчи",
-    link: "#",
-  },
-  {
-    id: 3,
     name: "Меню",
-    link: "#",
+    link: "#kitchen",
   },
   {
-    id: 4,
     name: "О кафе",
-    link: "#",
+    link: "#about",
   },
   {
-    id: 5,
-    name: "Контакты ",
-    link: "#",
+    name: "Контакты",
+    link: "#contacts",
   },
   {
-    id: 6,
-    name: "Отзывы ",
-    link: "#",
+    name: "Отзывы",
+    link: "#reviews",
   },
-]
+];
