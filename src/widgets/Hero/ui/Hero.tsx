@@ -9,6 +9,9 @@ const Hero = () => {
     >
       <div className="container">
         <div className={styles.content}>
+          <p className={styles.eyebrow}>
+            Кафе-бар «Велес»
+          </p>
           <h1 className={styles.title} id="hero-title">Уютное место для ваших событий и вкусных обедов</h1>
 
           <p className={styles.description}>Русская и европейская кухня, банкетный зал до 100 гостей и бизнес-
