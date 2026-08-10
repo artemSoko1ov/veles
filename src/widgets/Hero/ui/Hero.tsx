@@ -9,9 +9,9 @@ const Hero = () => {
     >
       <div className="container">
         <div className={styles.content}>
-          <h1 id="hero-title">Уютное место для ваших событий и вкусных обедов</h1>
+          <h1 className={styles.title} id="hero-title">Уютное место для ваших событий и вкусных обедов</h1>
 
-          <p>Русская и европейская кухня, банкетный зал до 100 гостей и бизнес-
+          <p className={styles.description}>Русская и европейская кухня, банкетный зал до 100 гостей и бизнес-
             ланчи по будням в самом сердце Миасса.</p>
 
           <div className={styles.actions}>

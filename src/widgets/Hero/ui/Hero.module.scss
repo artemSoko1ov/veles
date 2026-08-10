@@ -1,0 +1,30 @@
+.hero {
+  min-height: 100vh;
+  padding-block: 150px;
+  background-image: url("@/shared/assets/images/bg-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  max-width: 930px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.description {
+  max-width: 650px;
+  font-size: 26px;
+}
+
+.title {
+  line-height: 1.3;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
