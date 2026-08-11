@@ -1,13 +1,14 @@
 import "@/app/styles"
 import Header from "@/widgets/Header";
-import Hero from "@/widgets/Hero";
+import Home from "@/pages/home";
+
 
 function App() {
   return (
     <>
       <Header />
       <main>
-        <Hero />
+        <Home />
       </main>
     </>
 
