@@ -11,7 +11,7 @@
     background-position: bottom;
   }
 
-  @include tablet {
+  @include mobile {
     background-image: url("@/shared/assets/images/bg-hero-mobile.jpg");
   }
 }
