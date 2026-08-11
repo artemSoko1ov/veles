@@ -17,16 +17,16 @@ const Section = ({
                  }: Props) => {
   return (
     <section
-      className={clsx(styles.section, className)}
+      className={className}
       id={id}
       {...props}
     >
       <div className={clsx(styles.inner, "container")}>
-        <div className={styles.head}>
+        <div>
           <h2 className={styles.title}>{title}</h2>
           {description && <p className={styles.description}>{description}</p>}
         </div>
-        <div className={styles.body}>
+        <div>
           {children}
         </div>
       </div>
