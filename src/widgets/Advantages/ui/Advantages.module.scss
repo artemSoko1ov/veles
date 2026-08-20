@@ -1,0 +1,11 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.grid > :nth-child(1),
+.grid > :nth-child(2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
