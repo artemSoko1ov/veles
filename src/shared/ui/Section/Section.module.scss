@@ -1,3 +1,9 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: fluid(10, 5);
+}
+
 .inner {
   display: flex;
   flex-direction: column;
