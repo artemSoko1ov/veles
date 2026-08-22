@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import clsx from "clsx";
 import styles from "./Header.module.scss";
 import {navItems} from "@/widgets/Header/model/navItems";
@@ -8,6 +8,20 @@ import Button from "@/shared/ui/Button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 24);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, {passive: true});
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -18,7 +32,12 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header
+      className={clsx(styles.header, {
+        [styles.headerScrolled]: isScrolled,
+        [styles.headerMenuOpen]: isMenuOpen,
+      })}
+    >
       <div className={clsx(styles.inner, 'container')}>
         <a
           className={styles.logo}
