@@ -1,7 +1,15 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: fluid(24, 12);
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile-s {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .grid > :nth-child(1),
