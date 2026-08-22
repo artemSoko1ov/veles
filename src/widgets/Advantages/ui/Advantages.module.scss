@@ -8,12 +8,15 @@
   }
 
   @include mobile-s {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 .grid > :nth-child(1),
 .grid > :nth-child(2) {
   grid-column: span 2;
-  grid-row: span 2;
+
+  @include mobile-s {
+    grid-column: 1;
+  }
 }
