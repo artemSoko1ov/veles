@@ -1,10 +1,16 @@
 import styles from './Kitchen.module.scss';
+import Section from "@/shared/ui/Section";
 
 const Kitchen = () => {
   return (
-    <section className={styles.kitchen}>
+    <Section
+      title="Домашняя кухня"
+      description="Русские и европейские блюда, приготовленные из свежих продуктов
+  с заботой о каждом госте."
+      className={styles.kitchen}
+    >
 
-    </section>
+    </Section>
   );
 };
 
