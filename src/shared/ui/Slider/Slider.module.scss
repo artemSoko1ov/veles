@@ -2,24 +2,76 @@
   position: relative;
 
   width: 100%;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 48px;
+  align-items: center;
+  gap: 12px;
 }
 
 .track {
   display: flex;
-  gap: fluid(24, 16);
+  width: 100%;
+  transition: transform var(--transition);
+  will-change: transform;
+}
 
-  width: max-content;
-
-  transition: transform var(--transition-slow) var(--transition-easing);
+.trackWrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
 .slide {
-  flex: 0 0 min(1000px, 80vw);
+  flex: 0 0 100%;
+  width: 100%;
+  padding: 30px 30px;
+}
+
+.arrow {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+
+  border: 0;
+  border-radius: 50%;
+  color: var(--color-background);
+  background: var(--color-primary);
+  box-shadow: var(--shadow-md);
+
+  transition: background-color var(--transition), transform var(--transition);
+
+  svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &:hover {
+    background: var(--color-primary-hover);
+  }
+
+  &:disabled {
+    opacity: 0.45;
+    cursor: default;
+  }
 }
 
 @include mobile {
-  .slide {
-    flex-basis: calc(100vw - 2 * var(--container-padding-x));
+  .track {
+    transition-duration: 0.2s;
+  }
+
+  .slider {
+    grid-template-columns: 40px minmax(0, 1fr) 40px;
+    gap: 8px;
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
   }
 }

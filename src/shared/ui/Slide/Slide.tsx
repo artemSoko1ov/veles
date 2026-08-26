@@ -1,4 +1,4 @@
-import styles from './Slide.module.scss'
+import styles from './Slide.module.scss';
 
 type Props = {
   title: string;
@@ -12,7 +12,7 @@ const Slide = ({title, description, image}: Props) => {
       <img
         className={styles.image}
         src={image}
-        alt=""
+        alt={title}
         loading="lazy"
       />
       <div className={styles.body}>
