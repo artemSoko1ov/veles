@@ -14,9 +14,13 @@ type Props = {
 const Slider = ({ slides }: Props) => {
   return (
     <div className={styles.slider}>
-      {slides.map((slide) => (
-        <Slide key={slide.title} {...slide} />
-      ))}
+      <div className={styles.track}>
+        {slides.map((slide) => (
+          <div className={styles.slide} key={slide.title}>
+            <Slide {...slide} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
