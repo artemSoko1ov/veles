@@ -1,5 +1,7 @@
 import styles from './Kitchen.module.scss';
 import Section from "@/shared/ui/Section";
+import Slider from "@/shared/ui/Slider";
+import {kitchenSlides} from "@/widgets/Kitchen/model/kitchenSlides.ts";
 
 const Kitchen = () => {
   return (
@@ -9,7 +11,7 @@ const Kitchen = () => {
   с заботой о каждом госте."
       className={styles.kitchen}
     >
-
+      <Slider slides={kitchenSlides} />
     </Section>
   );
 };
