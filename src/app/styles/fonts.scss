@@ -2,9 +2,10 @@
   font-family: Prata;
   font-style: normal;
   font-weight: 400;
-  src: local("Prata"),
-  url("../../shared/assets/fonts/Prata/Prata-Regular.woff2") format("woff2"),
-  url("../../shared/assets/fonts/Prata/Prata-Regular.ttf") format("truetype");
+  src:
+    local("Prata"),
+    url("../../shared/assets/fonts/Prata/Prata-Regular.woff2") format("woff2"),
+    url("../../shared/assets/fonts/Prata/Prata-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -12,10 +13,11 @@
   font-family: Onest;
   font-style: normal;
   font-weight: 400;
-  src: local("Onest Regular"),
-  local("Onest-Regular"),
-  url("../../shared/assets/fonts/Onest/Onest-Regular.woff2") format("woff2"),
-  url("../../shared/assets/fonts/Onest/Onest-Regular.ttf") format("truetype");
+  src:
+    local("Onest Regular"),
+    local("Onest-Regular"),
+    url("../../shared/assets/fonts/Onest/Onest-Regular.woff2") format("woff2"),
+    url("../../shared/assets/fonts/Onest/Onest-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -23,10 +25,11 @@
   font-family: Onest;
   font-style: normal;
   font-weight: 500;
-  src: local("Onest Medium"),
-  local("Onest-Medium"),
-  url("../../shared/assets/fonts/Onest/Onest-Medium.woff2") format("woff2"),
-  url("../../shared/assets/fonts/Onest/Onest-Medium.ttf") format("truetype");
+  src:
+    local("Onest Medium"),
+    local("Onest-Medium"),
+    url("../../shared/assets/fonts/Onest/Onest-Medium.woff2") format("woff2"),
+    url("../../shared/assets/fonts/Onest/Onest-Medium.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -34,10 +37,11 @@
   font-family: Onest;
   font-style: normal;
   font-weight: 600;
-  src: local("Onest SemiBold"),
-  local("Onest-SemiBold"),
-  url("../../shared/assets/fonts/Onest/Onest-SemiBold.woff2") format("woff2"),
-  url("../../shared/assets/fonts/Onest/Onest-SemiBold.ttf") format("truetype");
+  src:
+    local("Onest SemiBold"),
+    local("Onest-SemiBold"),
+    url("../../shared/assets/fonts/Onest/Onest-SemiBold.woff2") format("woff2"),
+    url("../../shared/assets/fonts/Onest/Onest-SemiBold.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -45,9 +49,10 @@
   font-family: Onest;
   font-style: normal;
   font-weight: 700;
-  src: local("Onest Bold"),
-  local("Onest-Bold"),
-  url("../../shared/assets/fonts/Onest/Onest-Bold.woff2") format("woff2"),
-  url("../../shared/assets/fonts/Onest/Onest-Bold.ttf") format("truetype");
+  src:
+    local("Onest Bold"),
+    local("Onest-Bold"),
+    url("../../shared/assets/fonts/Onest/Onest-Bold.woff2") format("woff2"),
+    url("../../shared/assets/fonts/Onest/Onest-Bold.ttf") format("truetype");
   font-display: swap;
 }

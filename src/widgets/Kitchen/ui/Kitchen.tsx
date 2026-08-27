@@ -1,7 +1,7 @@
-import styles from './Kitchen.module.scss';
+import styles from "./Kitchen.module.scss";
 import Section from "@/shared/ui/Section";
 import Slider from "@/shared/ui/Slider";
-import {kitchenSlides} from "@/widgets/Kitchen/model/kitchenSlides.ts";
+import { kitchenSlides } from "@/widgets/Kitchen/model/kitchenSlides.ts";
 
 const Kitchen = () => {
   return (

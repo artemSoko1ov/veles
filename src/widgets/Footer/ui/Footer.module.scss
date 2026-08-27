@@ -47,7 +47,7 @@
     transition: color var(--transition-fast);
 
     @include hover {
-      color: var(--color-primary);
+      color: var(--color-text-secondary);
     }
   }
 }
@@ -63,7 +63,7 @@
   transition: color var(--transition-fast);
 
   @include hover {
-    color: var(--color-primary);
+    color: var(--color-text-secondary);
   }
 }
 

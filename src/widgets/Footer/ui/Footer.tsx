@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import styles from "./Footer.module.scss";
 import Logo from "@/shared/ui/Logo";
-import {navItems} from "@/widgets/Header/model/navItems";
+import { navItems } from "@/widgets/Header/model/navItems";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,11 +9,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={clsx(styles.inner, "container")}>
-        <a
-          className={styles.brand}
-          href="/"
-          aria-label="На главную"
-        >
+        <a className={styles.brand} href="/" aria-label="На главную">
           <Logo />
         </a>
 
@@ -24,34 +20,21 @@ const Footer = () => {
 
           <div className={styles.contacts}>
             <a href="tel:+79999999999">+7 (999)-999-99-99</a>
-            <a
-              href="https://yandex.ru/maps/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://yandex.ru/maps/" target="_blank" rel="noreferrer">
               г. Миасс, ул. Гуськова, 73
             </a>
           </div>
         </div>
 
-        <nav
-          className={styles.nav}
-          aria-label="Навигация в подвале"
-        >
-          {navItems.map(({label, href}) => (
-            <a
-              className={styles.link}
-              href={href}
-              key={href}
-            >
+        <nav className={styles.nav} aria-label="Навигация в подвале">
+          {navItems.map(({ label, href }) => (
+            <a className={styles.link} href={href} key={href}>
               {label}
             </a>
           ))}
         </nav>
 
-        <p className={styles.copy}>
-          © {currentYear} «Велес»
-        </p>
+        <p className={styles.copy}>© {currentYear} «Велес»</p>
       </div>
     </footer>
   );

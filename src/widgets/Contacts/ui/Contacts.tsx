@@ -1,4 +1,4 @@
-import styles from './Contacts.module.scss';
+import styles from "./Contacts.module.scss";
 import Section from "@/shared/ui/Section";
 
 const Contacts = () => {
@@ -17,9 +17,7 @@ const Contacts = () => {
 
         <div className={styles.item}>
           <h3 className={styles.label}>Телефон</h3>
-          <a href="tel:+79999999999">
-            +7 (999)-999-99-99
-          </a>
+          <a href="tel:+79999999999">+7 (999)-999-99-99</a>
         </div>
 
         <div className={styles.item}>
@@ -28,12 +26,11 @@ const Contacts = () => {
         </div>
       </div>
 
-
       <div className={styles.map}>
         <div
           style={{
-            position: 'relative',
-            overflow: 'hidden',
+            position: "relative",
+            overflow: "hidden",
           }}
         >
           <iframe
@@ -43,7 +40,7 @@ const Contacts = () => {
             frameBorder="1"
             allowFullScreen
             style={{
-              position: 'relative',
+              position: "relative",
             }}
             title="Кафе «Велес» на карте"
           />

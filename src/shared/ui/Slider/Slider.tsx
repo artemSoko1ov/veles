@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import styles from './Slider.module.scss';
-import Slide from '@/shared/ui/Slide';
+import { useState } from "react";
+import styles from "./Slider.module.scss";
+import Slide from "@/shared/ui/Slide";
 
 type SlideData = {
   title: string;
@@ -20,15 +20,11 @@ const Slider = ({ slides }: Props) => {
   }
 
   const handlePrev = () => {
-    setCurrentIndex((current) =>
-      current === 0 ? slides.length - 1 : current - 1
-    );
+    setCurrentIndex((current) => (current === 0 ? slides.length - 1 : current - 1));
   };
 
   const handleNext = () => {
-    setCurrentIndex((current) =>
-      current === slides.length - 1 ? 0 : current + 1
-    );
+    setCurrentIndex((current) => (current === slides.length - 1 ? 0 : current + 1));
   };
 
   return (

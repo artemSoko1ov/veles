@@ -1,7 +1,7 @@
-import styles from './Advantages.module.scss';
+import styles from "./Advantages.module.scss";
 import Section from "@/shared/ui/Section";
 import Card from "@/shared/ui/Card";
-import {advantagesCards} from "@/widgets/Advantages/model/advantagesCards.ts";
+import { advantagesCards } from "@/widgets/Advantages/model/advantagesCards.ts";
 
 const Advantages = () => {
   return (
@@ -12,13 +12,8 @@ const Advantages = () => {
       id="gallery"
     >
       <div className={styles.grid}>
-        {advantagesCards.map(({title, description, image}) => (
-          <Card
-            title={title}
-            description={description}
-            image={image}
-            key={title}
-          />
+        {advantagesCards.map(({ title, description, image }) => (
+          <Card title={title} description={description} image={image} key={title} />
         ))}
       </div>
     </Section>

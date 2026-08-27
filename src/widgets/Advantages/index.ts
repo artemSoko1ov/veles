@@ -1,1 +1,1 @@
-export { default } from './ui/Advantages'
+export { default } from "./ui/Advantages";

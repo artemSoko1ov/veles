@@ -1,1 +1,1 @@
-export { default } from './ui/Kitchen'
+export { default } from "./ui/Kitchen";

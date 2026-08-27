@@ -15,9 +15,10 @@
     background-color: transparent;
     box-shadow: none;
     backdrop-filter: blur(0);
-    transition: background-color var(--transition-slow),
-    box-shadow var(--transition-slow),
-    backdrop-filter var(--transition-slow);
+    transition:
+      background-color var(--transition-slow),
+      box-shadow var(--transition-slow),
+      backdrop-filter var(--transition-slow);
     pointer-events: none;
   }
 }
@@ -103,9 +104,10 @@
     visibility: hidden;
     transform: translateY(-12px);
     pointer-events: none;
-    transition: opacity var(--transition),
-    visibility var(--transition),
-    transform var(--transition);
+    transition:
+      opacity var(--transition),
+      visibility var(--transition),
+      transform var(--transition);
   }
 
   @include mobile {
@@ -127,9 +129,10 @@
   width: 120px;
   min-width: 120px;
   height: 120px;
-  transition: width var(--transition-slow),
-  min-width var(--transition-slow),
-  height var(--transition-slow);
+  transition:
+    width var(--transition-slow),
+    min-width var(--transition-slow),
+    height var(--transition-slow);
 
   img {
     display: block;
@@ -243,6 +246,13 @@
   @include hover {
     color: var(--color-text-secondary);
   }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: fluid(7, 3);
 }
 
 .burgerButton {

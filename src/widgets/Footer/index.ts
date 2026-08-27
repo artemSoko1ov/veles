@@ -1,1 +1,1 @@
-export {default} from './ui/Footer'
+export { default } from "./ui/Footer";

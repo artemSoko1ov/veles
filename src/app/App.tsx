@@ -1,9 +1,8 @@
-import "@/app/styles"
+import "@/app/styles";
 import Header from "@/widgets/Header";
 import Home from "@/pages/home";
 import Footer from "@/widgets/Footer";
 import DemoBanner from "@/shared/ui/DemoBanner";
-
 
 function App() {
   return (
@@ -15,8 +14,7 @@ function App() {
       </main>
       <Footer />
     </>
-
-  )
+  );
 }
 
-export default App
+export default App;

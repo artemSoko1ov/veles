@@ -1,1 +1,1 @@
-export {default} from "./ui/Hero"
+export { default } from "./ui/Hero";

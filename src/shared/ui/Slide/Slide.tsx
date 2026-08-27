@@ -1,4 +1,4 @@
-import styles from './Slide.module.scss';
+import styles from "./Slide.module.scss";
 
 type Props = {
   title: string;
@@ -6,15 +6,10 @@ type Props = {
   image: string;
 };
 
-const Slide = ({title, description, image}: Props) => {
+const Slide = ({ title, description, image }: Props) => {
   return (
     <div className={styles.slide}>
-      <img
-        className={styles.image}
-        src={image}
-        alt={title}
-        loading="lazy"
-      />
+      <img className={styles.image} src={image} alt={title} loading="lazy" />
       <div className={styles.body}>
         <h3>{title}</h3>
         <p>{description}</p>
