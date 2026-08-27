@@ -11,7 +11,7 @@ const Footer = () => {
       <div className={clsx(styles.inner, "container")}>
         <a
           className={styles.brand}
-          href="#"
+          href="/"
           aria-label="На главную"
         >
           <Logo />
@@ -38,13 +38,13 @@ const Footer = () => {
           className={styles.nav}
           aria-label="Навигация в подвале"
         >
-          {navItems.map(({name, link}) => (
+          {navItems.map(({label, href}) => (
             <a
               className={styles.link}
-              href={link}
-              key={link}
+              href={href}
+              key={href}
             >
-              {name}
+              {label}
             </a>
           ))}
         </nav>

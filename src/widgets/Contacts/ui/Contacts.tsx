@@ -7,6 +7,7 @@ const Contacts = () => {
       title="Будем рады видеть вас"
       description="Заходите на обед, встречу или семейный вечер в «Велес»."
       className={styles.contacts}
+      id="contacts"
     >
       <div className={styles.content}>
         <div className={styles.item}>

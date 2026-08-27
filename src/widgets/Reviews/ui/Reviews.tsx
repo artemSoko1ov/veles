@@ -6,6 +6,7 @@ const Reviews = () => {
     <Section
       title="Что говорят гости"
       description="Нам важно, чтобы каждый гость уходил довольным и возвращался снова."
+      id="reviews"
     >
       <div className={styles.widget}>
         <iframe

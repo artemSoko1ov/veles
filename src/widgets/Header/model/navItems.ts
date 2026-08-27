@@ -1,22 +1,7 @@
 export const navItems = [
-  {
-    name: "Банкеты и мероприятия",
-    link: "#about",
-  },
-  {
-    name: "Меню",
-    link: "#kitchen",
-  },
-  {
-    name: "О кафе",
-    link: "#about",
-  },
-  {
-    name: "Контакты",
-    link: "#contacts",
-  },
-  {
-    name: "Отзывы",
-    link: "#reviews",
-  },
+  { label: 'О нас', href: '#about' },
+  { label: 'Галерея', href: '#gallery' },
+  { label: 'Кухня', href: '#menu' },
+  { label: 'Отзывы', href: '#reviews' },
+  { label: 'Контакты', href: '#contacts' },
 ];

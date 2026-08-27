@@ -41,7 +41,7 @@ const Header = () => {
       <div className={clsx(styles.inner, 'container')}>
         <a
           className={styles.logo}
-          href="#"
+          href="/"
           aria-label="На главную"
         >
           <Logo />
@@ -54,17 +54,17 @@ const Header = () => {
           aria-label="Основная навигация"
         >
           <ul className={styles.list}>
-            {navItems.map(({name, link}) => (
+            {navItems.map(({label, href}) => (
               <li
                 className={styles.item}
-                key={link}
+                key={href}
               >
                 <a
                   className={styles.link}
-                  href={link}
+                  href={href}
                   onClick={closeMenu}
                 >
-                  {name}
+                  {label}
                 </a>
               </li>
             ))}

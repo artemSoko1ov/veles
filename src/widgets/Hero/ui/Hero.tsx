@@ -1,10 +1,10 @@
 import styles from "./Hero.module.scss"
-import Button from "@/shared/ui/Button";
 
 const Hero = () => {
   return (
     <section
       className={styles.hero}
+      id="about"
       aria-labelledby="hero-title"
     >
       <div className="container">
@@ -18,8 +18,12 @@ const Hero = () => {
             ланчи по будням в самом сердце Миасса.</p>
 
           <div className={styles.actions}>
-            <Button variant="primary">Забронировать стол</Button>
-            <Button variant="outline">Посмотреть меню</Button>
+            <a
+              className={styles.link}
+              href="#menu"
+            >
+              Посмотреть меню
+            </a>
           </div>
         </div>
       </div>

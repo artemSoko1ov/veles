@@ -9,6 +9,7 @@ const Advantages = () => {
       title="Почему выбирают «Велес»"
       description="От семейного ужина до большого банкета — создаем комфортную атмосферу, готовим домашние блюда и заботимся о каждом госте."
       className={styles.advantages}
+      id="gallery"
     >
       <div className={styles.grid}>
         {advantagesCards.map(({title, description, image}) => (

@@ -10,6 +10,7 @@ const Kitchen = () => {
       description="Русские и европейские блюда, приготовленные из свежих продуктов
   с заботой о каждом госте."
       className={styles.kitchen}
+      id="menu"
     >
       <Slider slides={kitchenSlides} />
     </Section>
