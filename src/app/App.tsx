@@ -1,6 +1,7 @@
 import "@/app/styles"
 import Header from "@/widgets/Header";
 import Home from "@/pages/home";
+import Footer from "@/widgets/Footer";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <main>
         <Home />
       </main>
+      <Footer />
     </>
 
   )
